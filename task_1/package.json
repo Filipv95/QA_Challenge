@@ -1,0 +1,13 @@
+{
+  "name": "task_1",
+  "version": "1.0.0",
+  "description": "## Table of Contents",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.35.1"
+  }
+}
