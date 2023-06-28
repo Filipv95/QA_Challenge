@@ -7,8 +7,10 @@ Feature: Connect Metamask account to the faucet
   As a user of the faucet with a Metamask account
   I want to be able to connect my Metamask account to the faucet
 
-  Scenario: Connect Metamask account
+  Background: Land to faucet's homepage
     Given I am on the faucet's homepage
+
+  Scenario: Connect Metamask account
     And I have a Metamask account installed and logged in
     When I click on the "Connect with Metamask" button
     Then the faucet should initiate the connection process with Metamask
@@ -18,7 +20,6 @@ Feature: Connect Metamask account to the faucet
     And securely handle the connection process without storing or exposing sensitive user data
 
   Scenario: Prompt to install or log in to Metamask
-    Given I am on the faucet's homepage
     And I do not have Metamask installed or logged in
     When I click on the "Connect with Metamask" button
     Then the faucet should prompt me to install Metamask or log in
@@ -31,7 +32,6 @@ Feature: Connect Metamask account to the faucet
     And return to the initial state
 
   Scenario: Handle connection errors
-    Given I am on the faucet's homepage
     And I have a Metamask account installed and logged in
     When I click on the "Connect with Metamask" button
     And there is a network connectivity issue or Metamask-specific error
