@@ -31,7 +31,7 @@ Check if you already have Node instaled, run:
 node -v
 ```
 
-**Playwright version 1.33.0**
+**Playwright version 1.35.1**
 
 Install Playwright dependencies, run:
 
@@ -46,6 +46,5 @@ npx playwright install
 To run test:
 
 ```
-npx playwright tsc factorial.ts
-node factorial.js
+node factorial_script.js
 ```
