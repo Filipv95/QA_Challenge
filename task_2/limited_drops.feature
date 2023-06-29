@@ -1,6 +1,7 @@
 #
 # limited_drops.feature
 #
+# All the scenarios in this feature file are high level
 
 Feature: Limit drops to 1 per 24 hours
 

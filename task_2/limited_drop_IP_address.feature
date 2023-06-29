@@ -1,6 +1,7 @@
 #
 # limited_drop_IP_address.feature
 #
+# All the scenarios in this feature file are high level
 
 Feature: Limit user's IP address for token requests
 

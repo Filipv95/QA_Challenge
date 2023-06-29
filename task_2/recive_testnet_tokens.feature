@@ -1,6 +1,7 @@
 #
 # recive_testnet_tokens.feature
 #
+# All the scenarios in this feature file are high level
 
 Feature: Receive test tokens with deposit address
 
