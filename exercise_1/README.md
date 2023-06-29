@@ -33,7 +33,7 @@ npm i
 
 
 
-**Playwright version 1.35.1**
+**Playwright version 1.35.1 or latest**
 
 Check if you already have Playwright instaled, run:
 
