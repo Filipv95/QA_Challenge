@@ -1,3 +1,9 @@
+// 
+// factorial_script.js
+// 
+// Note: The current version of this script is not using Playwright framework for UI automation testing,
+//       but it is includedfor a potential future UI testing enhancments
+
 const { chromium } = require('@playwright/test');
 
 async function verifyCalculator() {

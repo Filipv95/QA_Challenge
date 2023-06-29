@@ -11,7 +11,7 @@
 
 ## Description
 
-This repository contains automation test for Factorial Calculator web application using Playwright test automation framework written in TypeScript.
+This repository contains automation test for Factorial Calculator web application using Playwright test automation framework written in JavaScript.
 
 ---
 
@@ -19,32 +19,39 @@ This repository contains automation test for Factorial Calculator web applicatio
 
 **Node version 14 or above**
 
-Install Node modules, run:
-
-```
-npm i
-```
-
 Check if you already have Node instaled, run:
 
 ```
 node -v
 ```
 
-**Playwright version 1.35.1**
-
-Install Playwright dependencies, run:
+Install Node modules, run:
 
 ```
-npx playwright install
+npm i
+```
+
+
+
+**Playwright version 1.35.1**
+
+Check if you already have Playwright instaled, run:
+
+```
+playwright --version
 ```
 
 ---
 
 ## How to run test
 
-To run test:
+To start test, go to tests/ and run:
 
 ```
 node factorial_script.js
+```
+or type:
+
+```
+node test/factorial_script.js
 ```

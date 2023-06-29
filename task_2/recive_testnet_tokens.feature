@@ -1,6 +1,7 @@
 #
 # recive_testnet_tokens.feature
 #
+# All the scenarios in this feature file are high level
 
 Feature: Receive test tokens with deposit address
 
@@ -8,8 +9,10 @@ Feature: Receive test tokens with deposit address
   I want to be able to receive test tokens without connecting my Metamask account to the faucet 
   by simply entering my deposit address
 
-  Scenario: Enter deposit address to receive test tokens
+  Background: Land to faucet's homepage
     Given I am on the faucet's homepage
+
+  Scenario: Enter deposit address to receive test tokens
     And I want to receive test tokens without connecting my Metamask account
     When I enter my deposit address in the designated field
     And click on the "Receive Test Tokens" button
@@ -18,7 +21,6 @@ Feature: Receive test tokens with deposit address
     And display a confirmation message or transaction ID
 
   Scenario: Display error for invalid deposit address
-    Given I am on the faucet's homepage
     And I want to receive test tokens without connecting my Metamask account
     When I enter an invalid deposit address in the designated field
     And click on the "Receive Test Tokens" button
@@ -26,7 +28,6 @@ Feature: Receive test tokens with deposit address
     And prevent further interaction until a valid deposit address is provided
 
   Scenario: Handle token distribution errors
-    Given I am on the faucet's homepage
     And I want to receive test tokens without connecting my Metamask account
     When I enter my deposit address in the designated field
     And click on the "Receive Test Tokens" button
@@ -35,7 +36,6 @@ Feature: Receive test tokens with deposit address
     And suggest possible solutions to resolve the error
 
   Scenario: Display instructions for receiving test tokens
-    Given I am on the faucet's homepage
     And I want to receive test tokens without connecting my Metamask account
     When I access the faucet's help section or documentation
     Then the faucet should provide clear instructions on how to enter the deposit address
